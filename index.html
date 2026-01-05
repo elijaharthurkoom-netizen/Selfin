@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Golden Audit | Start With Why</title>
+    <meta name="description" content="A self-audit template for founders based on the Golden Circle. Start with Why.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <style>
+        :root {
+            --brand-color: #F24C00;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #FAFAFA;
+            color: #1A1A1A;
+            scroll-behavior: smooth;
+        }
+        .bulletin-text {
+            font-family: 'DM Sans', sans-serif;
+        }
+        .wireframe-border {
+            border: 2px solid #E5E5E5;
+        }
+        .brand-bg {
+            background-color: var(--brand-color);
+        }
+        .brand-text {
+            color: var(--brand-color);
+        }
+        .brand-border {
+            border-color: var(--brand-color);
+        }
+        .golden-circle {
+            transition: all 0.3s ease;
+        }
+        .golden-circle:hover {
+            transform: scale(1.02);
+        }
+        .cta-shadow {
+            box-shadow: 0 20px 40px -10px rgba(242, 76, 0, 0.3);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <nav class="py-6 px-8 flex justify-between items-center border-b border-gray-200 bg-white sticky top-0 z-50">
+        <div class="flex items-center gap-2">
+            <div class="w-8 h-8 brand-bg rounded-full flex items-center justify-center">
+                <i data-lucide="target" class="text-white w-5 h-5"></i>
+            </div>
+            <span class="font-extrabold text-xl tracking-tight uppercase">Golden Audit</span>
+        </div>
+        <div class="hidden md:flex gap-8 font-semibold text-sm">
+            <a href="#why" class="hover:brand-text transition-colors">THE WHY</a>
+            <a href="#how" class="hover:brand-text transition-colors">THE HOW</a>
+            <a href="#what" class="hover:brand-text transition-colors">THE WHAT</a>
+        </div>
+        <a href="#cta" class="brand-bg text-white px-6 py-2 rounded-full font-bold text-sm hover:opacity-90 transition-all">
+            GET TEMPLATE
+        </a>
+    </nav>
+
+    <section id="why" class="max-w-6xl mx-auto px-8 py-20 text-center">
+        <div class="inline-block brand-text font-bold tracking-widest text-xs mb-4 border-b-2 brand-border pb-1">
+            START WITH WHY
+        </div>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 leading-tight">
+            People don't buy what you do; <br/>
+            <span class="brand-text">they buy why you do it.</span>
+        </h1>
+        <p class="text-xl text-gray-600 max-w-2xl mx-auto mb-12 leading-relaxed">
+            Most self-audits focus on the results. We focus on the belief. This isn't just a checklist; it's a recalibration of your core purpose.
+        </p>
+        
+        <div class="relative w-full max-w-lg mx-auto h-[400px] flex items-center justify-center mb-20">
+            <div class="golden-circle absolute w-full h-full border-2 border-dashed border-gray-300 rounded-full flex items-end justify-center pb-4 text-gray-400 font-bold uppercase tracking-widest text-xs">What</div>
+            <div class="golden-circle absolute w-[70%] h-[70%] border-2 border-dashed border-gray-400 rounded-full flex items-end justify-center pb-4 text-gray-500 font-bold uppercase tracking-widest text-xs">How</div>
+            <div class="golden-circle absolute w-[40%] h-[40%] brand-border border-4 rounded-full flex items-center justify-center brand-text font-black uppercase tracking-widest text-lg bg-white shadow-xl">Why</div>
+        </div>
+    </section>
+
+    <section id="how" class="bg-white border-y border-gray-200 py-24 px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="wireframe-border p-8 rounded-2xl bg-gray-50">
+                    <div class="space-y-6">
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-lg brand-bg flex-shrink-0 flex items-center justify-center text-white font-bold">1</div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Identify the Core Belief</h3>
+                                <p class="text-gray-600 text-sm">Strip away the metrics. What is the fundamental cause you are trying to serve?</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-lg brand-bg flex-shrink-0 flex items-center justify-center text-white font-bold">2</div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Audit the Discipline</h3>
+                                <p class="text-gray-600 text-sm">How do you bring that why to life? Are your daily habits consistent with your belief?</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 items-start">
+                            <div class="w-10 h-10 rounded-lg brand-bg flex-shrink-0 flex items-center justify-center text-white font-bold">3</div>
+                            <div>
+                                <h3 class="font-bold text-lg mb-2">Verify Consistency</h3>
+                                <p class="text-gray-600 text-sm">The "What" is just the proof. Ensure your results are a reflection of your intent.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-extrabold mb-6">The Process of Clarity.</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        The How is the discipline to hold yourself accountable to your Why. It’s the systems and processes that ensure your actions are always in alignment with your vision.
+                    </p>
+                    <ul class="bulletin-text space-y-4">
+                        <li class="flex items-center gap-3 font-medium">
+                            <i data-lucide="check-circle-2" class="brand-text w-5 h-5"></i>
+                            Built for founders and visionaries
+                        </li>
+                        <li class="flex items-center gap-3 font-medium">
+                            <i data-lucide="check-circle-2" class="brand-text w-5 h-5"></i>
+                            Focuses on biological decision making
+                        </li>
+                        <li class="flex items-center gap-3 font-medium">
+                            <i data-lucide="check-circle-2" class="brand-text w-5 h-5"></i>
+                            Removes "What" clutter from your workflow
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="what" class="max-w-6xl mx-auto px-8 py-24">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold mb-4">The Template: Your Proof.</h2>
+            <p class="text-gray-500">Every piece of this template serves a single purpose: Alignment.</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="wireframe-border p-8 rounded-xl hover:brand-border transition-colors group">
+                <i data-lucide="layout" class="w-10 h-10 mb-6 group-hover:brand-text transition-colors"></i>
+                <h4 class="font-bold text-xl mb-4">Structural Integrity</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    A clean, wireframed layout that prevents you from getting distracted by aesthetics and forces you to focus on the message.
+                </p>
+                <div class="bulletin-text text-xs font-bold brand-text uppercase tracking-widest">Includes 12 Modules</div>
+            </div>
+            
+            <div class="wireframe-border p-8 rounded-xl hover:brand-border transition-colors group">
+                <i data-lucide="brain-circuit" class="w-10 h-10 mb-6 group-hover:brand-text transition-colors"></i>
+                <h4 class="font-bold text-xl mb-4">The Limbic Driver</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    Questions designed to trigger the limbic brain—the part of the brain that controls behavior and decision-making.
+                </p>
+                <div class="bulletin-text text-xs font-bold brand-text uppercase tracking-widest">Cognitive Science Based</div>
+            </div>
+            
+            <div class="wireframe-border p-8 rounded-xl hover:brand-border transition-colors group">
+                <i data-lucide="bar-chart-3" class="w-10 h-10 mb-6 group-hover:brand-text transition-colors"></i>
+                <h4 class="font-bold text-xl mb-4">Evidence Mapping</h4>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    A section dedicated to the "What"—the tangible proof that your organization or life is actually fulfilling its "Why."
+                </p>
+                <div class="bulletin-text text-xs font-bold brand-text uppercase tracking-widest">Measurable Results</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cta" class="max-w-6xl mx-auto px-8 pb-24">
+        <div class="brand-bg rounded-[2rem] p-12 md:p-20 text-center text-white relative overflow-hidden cta-shadow">
+            <div class="relative z-10">
+                <h2 class="text-4xl md:text-5xl font-extrabold mb-6">Ready to lead with inspiration?</h2>
+                <p class="text-lg opacity-80 mb-10 max-w-xl mx-auto font-medium">
+                    Stop competing on the "What." Start inspiring with the "Why." Get the Golden Circle Self-Audit Template for one small investment.
+                </p>
+                <div class="flex flex-col items-center gap-6">
+                    <button class="bg-white text-black px-12 py-5 rounded-full font-black text-xl hover:bg-gray-100 transition-all shadow-2xl transform hover:-translate-y-1 active:scale-95">
+                        GET TEMPLATE $5.99
+                    </button>
+                    <div class="flex items-center gap-4 opacity-70">
+                        <div class="flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase">
+                            <i data-lucide="shield-check" class="w-4 h-4"></i>
+                            Secure Checkout
+                        </div>
+                        <div class="w-1 h-1 bg-white rounded-full"></div>
+                        <div class="flex items-center gap-1.5 text-xs font-bold tracking-widest uppercase">
+                            <i data-lucide="download" class="w-4 h-4"></i>
+                            Instant Access
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -right-20 -bottom-20 w-80 h-80 border-8 border-white/10 rounded-full"></div>
+            <div class="absolute -left-20 -top-20 w-40 h-40 border-8 border-white/10 rounded-full"></div>
+        </div>
+    </section>
+
+    <footer class="border-t border-gray-200 py-12 px-8 text-center text-gray-500 text-sm">
+        <p class="mb-4 font-bold tracking-widest uppercase">Golden Audit Template</p>
+        <p class="bulletin-text">Inspired by the biology of human behavior. <br/> Design follows purpose.</p>
+        <p class="mt-8 opacity-50">© 2026 Golden Audit. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        document.addEventListener('DOMContentLoaded', () => {
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
