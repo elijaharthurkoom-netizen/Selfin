@@ -9,16 +9,15 @@
     <script src="https://js.paystack.co/v1/inline.js"></script>
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@200;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Manrope:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/lucide@latest"></script>
     
     <style>
         :root { --brand-color: #F24C00; }
-        body { font-family: 'Manrope', sans-serif; background-color: #FAFAFA; color: #1A1A1A; scroll-behavior: smooth; }
+        body { font-family: 'Manrope', sans-serif; background-color: #FAFAFA; color: #1A1A1A; scroll-behavior: smooth; font-weight: 500; }
         .brand-bg { background-color: var(--brand-color); }
         .brand-text { color: var(--brand-color); }
         
-        /* Floating Animation for Specific Icons */
         @keyframes float {
             0% { transform: translateY(0px) rotate(0deg); }
             50% { transform: translateY(-8px) rotate(1deg); }
@@ -29,8 +28,8 @@
 
         .nav-glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(12px); }
         .cta-shadow { box-shadow: 0 25px 50px -12px rgba(242, 76, 0, 0.4); }
+        .wireframe-border { border: 1px solid #d1d5db; transition: all 0.3s ease; }
         
-        /* Transition Overlay Style */
         #payment-loader {
             display: none;
             position: fixed;
@@ -49,13 +48,12 @@
 </head>
 <body class="antialiased">
 
-    <!-- Payment Loading Overlay -->
     <div id="payment-loader" class="fade-in">
         <div class="w-16 h-16 brand-bg rounded-2xl flex items-center justify-center animate-bounce mb-6 shadow-xl">
             <i data-lucide="shield-check" class="text-white w-8 h-8"></i>
         </div>
         <h2 class="text-xl font-black tracking-tight">Securing Connection...</h2>
-        <p class="text-gray-400 text-sm mt-2 font-medium">Preparing your private audit session</p>
+        <p class="text-gray-600 text-sm mt-2 font-semibold">Preparing your private audit session</p>
     </div>
 
     <div id="main-content">
@@ -71,9 +69,8 @@
             </button>
         </nav>
 
-        <!-- Hero Section -->
         <section class="max-w-5xl mx-auto px-8 py-20 md:py-32 text-center">
-            <div class="inline-flex items-center gap-2 brand-text font-bold tracking-[0.2em] text-[10px] mb-8 bg-orange-50 px-4 py-1.5 rounded-full uppercase border border-orange-100">
+            <div class="inline-flex items-center gap-2 brand-text font-black tracking-[0.2em] text-[10px] mb-8 bg-orange-50 px-4 py-1.5 rounded-full uppercase border border-orange-200">
                 <i data-lucide="compass" class="w-3.5 h-3.5 animate-float"></i>
                 A Path to Clarity
             </div>
@@ -81,25 +78,222 @@
                 Trust your direction.<br/>
                 <span class="brand-text italic underline decoration-orange-200">Start with Why.</span>
             </h1>
-            <p class="text-lg md:text-2xl text-gray-500 max-w-2xl mx-auto mb-14 leading-relaxed font-light">
-                Discover the core belief that drives your work and life. A simple, reflective experience to help you find your purpose and move forward with conviction.
+            <p class="text-lg md:text-2xl text-gray-700 max-w-2xl mx-auto mb-14 leading-relaxed font-semibold">
+                Discover the core belief that drives your work and life. A simple, reflective experience to help you find your purpose.
             </p>
             
             <div class="relative w-full max-w-sm mx-auto h-[320px] flex items-center justify-center mb-10 group">
-                <div class="absolute w-full h-full border-2 border-dashed border-gray-200 rounded-full flex items-end justify-center pb-6 text-gray-300 font-bold uppercase tracking-widest text-[9px]">The Results</div>
-                <div class="absolute w-[70%] h-[70%] border-2 border-dashed border-gray-300 rounded-full flex items-end justify-center pb-6 text-gray-400 font-bold uppercase tracking-widest text-[9px]">The Habits</div>
+                <div class="absolute w-full h-full border-2 border-dashed border-gray-300 rounded-full flex items-end justify-center pb-6 text-gray-400 font-black uppercase tracking-widest text-[9px]">The Results</div>
+                <div class="absolute w-[70%] h-[70%] border-2 border-dashed border-gray-400 rounded-full flex items-end justify-center pb-6 text-gray-500 font-black uppercase tracking-widest text-[9px]">The Habits</div>
                 <div class="absolute w-[40%] h-[40%] brand-bg border-4 border-white rounded-full flex items-center justify-center text-white font-black uppercase tracking-widest text-base shadow-2xl animate-float">Why</div>
             </div>
         </section>
 
-        <!-- Experience Features -->
-        <section class="bg-white border-y border-gray-100 py-24 px-8">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid md:grid-cols-2 gap-20 items-center">
-                    <div class="space-y-12">
-                        <div class="flex gap-6 items-start">
-                            <div class="w-14 h-14 rounded-2xl bg-orange-50 flex-shrink-0 flex items-center justify-center brand-text animate-float shadow-sm">
-                                <i data-lucide="cloud-off" class="w-7 h-7"></i>
+        <!-- Process Section -->
+        <section class="max-w-6xl mx-auto px-8 py-24 bg-white border-y border-gray-100">
+            <div class="max-w-3xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl md:text-5xl font-extrabold mb-6">The Process of Clarity</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg font-semibold">
+                        Alignment isn't an accident. It's a three-step audit of your intent, your discipline, and your proof.
+                    </p>
+                </div>
+
+                <div class="space-y-12">
+                    <!-- Step 1 -->
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 rounded-xl border-2 border-orange-100 flex-shrink-0 flex items-center justify-center brand-text font-black shadow-sm bg-orange-50/30">1</div>
+                        <div>
+                            <h3 class="font-extrabold text-xl mb-2">Define the Why</h3>
+                            <p class="text-gray-700 text-base font-semibold">Strip away the "What" and identify the singular belief that drives your energy and decision-making.</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="flex gap-6 items-start">
+                        <div class="w-12 h-12 rounded-xl border-2 border-orange-100 flex-shrink-0 flex items-center justify-center brand-text font-black shadow-sm bg-orange-50/30">2</div>
+                        <div>
+                            <h3 class="font-extrabold text-xl mb-2">Audit the Discipline</h3>
+                            <p class="text-gray-700 text-base font-semibold">How do you bring that why to life? Are your daily habits and systems consistent with your stated belief?</p>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 + CTA Box -->
+                    <div class="bg-gray-50 p-8 md:p-10 rounded-[2.5rem] border border-gray-200/60 shadow-inner">
+                        <div class="flex flex-col md:flex-row gap-8 items-start md:items-center">
+                            <div class="flex gap-6 items-start flex-1">
+                                <div class="w-12 h-12 rounded-xl brand-bg flex-shrink-0 flex items-center justify-center text-white font-black shadow-lg">3</div>
+                                <div>
+                                    <h3 class="font-extrabold text-xl mb-2">Verify Consistency</h3>
+                                    <p class="text-gray-700 text-base font-semibold max-w-md">The results are just the proof. Ensure your outputs are a true reflection of your intent.</p>
+                                </div>
+                            </div>
+                            <div class="w-full md:w-auto text-center">
+                                <button onclick="payWithPaystack()" class="w-full md:w-auto brand-bg text-white px-8 py-5 rounded-2xl font-black text-sm tracking-widest uppercase shadow-xl hover:scale-105 transition-all active:scale-95 flex items-center justify-center gap-3">
+                                    START AUDIT — $5.99 <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                                </button>
+                                <p class="text-[10px] text-gray-400 font-bold uppercase tracking-wider mt-3">One-time payment</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Realistic Benefits Grid -->
+        <section class="max-w-6xl mx-auto px-8 py-24">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-extrabold mb-6 leading-tight">What this actually does for you:</h2>
+                    <p class="text-gray-700 font-semibold text-lg mb-8">No life-hacks or overnight fixes. Just a clearer head and a better way to work.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-green-50 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="shield-check" class="text-green-600 w-5 h-5"></i>
+                            </div>
+                            <p class="text-gray-800 font-bold leading-relaxed">Stop the "Sunday Scaries." Know exactly why you're waking up and what you're building toward.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="scissors" class="text-blue-600 w-5 h-5"></i>
+                            </div>
+                            <p class="text-gray-800 font-bold leading-relaxed">Cut the fluff. Use your "Why" as a filter to say no to projects and people that drain your energy.</p>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-orange-50 flex items-center justify-center flex-shrink-0">
+                                <i data-lucide="anchor" class="text-[#F24C00] w-5 h-5"></i>
+                            </div>
+                            <p class="text-gray-800 font-bold leading-relaxed">Feel grounded. When things get chaotic, you’ll have a single document to look at and remember your center.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white p-8 md:p-12 rounded-[2.5rem] border border-gray-100 shadow-xl relative">
+                    <div class="absolute top-6 right-8 opacity-10"><i data-lucide="quote" class="w-12 h-12"></i></div>
+                    <p class="text-xl font-extrabold italic mb-6 leading-relaxed">"I used to feel like I was just busy for the sake of being busy. This audit gave me a language for my gut feeling. I'm not doing more work, I'm just doing the right work."</p>
+                    <div class="flex items-center gap-4">
+                        <div class="w-12 h-12 rounded-full bg-gray-200 border-2 border-white shadow-sm overflow-hidden flex items-center justify-center font-black brand-text">JD</div>
+                        <div>
+                            <p class="font-black text-sm">Jordan D.</p>
+                            <p class="text-gray-500 font-bold text-[10px] uppercase tracking-widest">Independent Creative</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final CTA -->
+        <section class="max-w-6xl mx-auto px-8 pb-24">
+            <div class="brand-bg rounded-[3.5rem] p-12 md:p-24 text-center text-white relative overflow-hidden cta-shadow">
+                <div class="relative z-10">
+                    <h2 class="text-4xl md:text-7xl font-extrabold mb-8 tracking-tighter">Your foundation is waiting.</h2>
+                    <p class="text-xl mb-14 max-w-lg mx-auto font-black opacity-90">
+                        Enter the experience and build your "Why" document instantly.
+                    </p>
+                    <div class="flex flex-col items-center gap-6">
+                        <button onclick="payWithPaystack()" class="bg-white text-black px-16 py-7 rounded-full font-black text-2xl hover:scale-105 transition-all shadow-2xl active:scale-95">
+                            GET THE AUDIT $5.99
+                        </button>
+                        
+                        <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 max-w-xl">
+                            <div class="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] opacity-80">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i> Lifetime Access
+                            </div>
+                            <div class="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] opacity-80">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i> Printable Framework
+                            </div>
+                            <div class="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] opacity-80">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i> Secure Checkout
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decorative circles -->
+                <div class="absolute -right-20 -bottom-20 w-96 h-96 border-[40px] border-white/5 rounded-full"></div>
+                <div class="absolute -left-10 top-10 w-40 h-40 border-[20px] border-white/5 rounded-full"></div>
+            </div>
+        </section>
+
+        <footer class="py-16 px-8 text-center text-gray-500 text-[11px] border-t border-gray-100 bg-white">
+            <p class="mb-3 font-black tracking-[0.4em] uppercase brand-text">Golden Audit</p>
+            <p class="font-bold">© 2026 Golden Audit. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <div id="success-section" class="hidden min-h-screen flex items-center justify-center px-8 bg-white fade-in">
+        <div class="max-w-sm w-full text-center space-y-12">
+            <div class="flex flex-col items-center space-y-6">
+                <div class="brand-bg w-20 h-20 rounded-[2rem] flex items-center justify-center shadow-2xl animate-float">
+                    <i data-lucide="check-circle-2" class="text-white w-10 h-10"></i>
+                </div>
+                <div>
+                    <h2 class="text-4xl font-black mb-2 tracking-tight">Access Granted.</h2>
+                    <p class="text-gray-600 text-sm font-black">Use the code below to start your experience.</p>
+                </div>
+            </div>
+            
+            <div class="bg-gray-50 border-2 border-dashed border-gray-200 rounded-[2.5rem] p-12">
+                <p id="access-code" class="text-6xl font-black brand-text tracking-tighter">566780</p>
+            </div>
+
+            <div class="space-y-4">
+                <button onclick="copyCode()" id="copy-btn" class="brand-bg text-white w-full py-5 rounded-2xl font-black tracking-widest uppercase text-xs shadow-xl active:scale-95 transition-all">Copy Code</button>
+                <a href="https://app.rarec.cyou" class="flex items-center justify-center gap-2 w-full text-gray-500 font-black text-xs uppercase tracking-widest py-4 hover:text-black transition-colors">
+                    Enter App <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const PAYSTACK_KEY = 'pk_live_4c4cf6fab5e51e562231629e8851bf999a5ce16f';
+
+        function payWithPaystack() {
+            const loader = document.getElementById('payment-loader');
+            loader.style.display = 'flex';
+
+            let handler = PaystackPop.setup({
+                key: PAYSTACK_KEY,
+                email: 'customer@rarec.cyou',
+                amount: 9500, 
+                currency: 'GHS', 
+                callback: function(response) {
+                    loader.style.display = 'none';
+                    showSuccess();
+                },
+                onClose: function() {
+                    loader.style.display = 'none';
+                }
+            });
+            
+            setTimeout(() => {
+                handler.openIframe();
+            }, 800);
+        }
+
+        function showSuccess() {
+            document.getElementById('main-content').classList.add('hidden');
+            document.getElementById('success-section').classList.remove('hidden');
+            window.scrollTo(0, 0);
+            lucide.createIcons();
+        }
+
+        function copyCode() {
+            const code = document.getElementById('access-code').innerText;
+            navigator.clipboard.writeText(code).then(() => {
+                const btn = document.getElementById('copy-btn');
+                btn.innerText = "COPIED!";
+                setTimeout(() => { btn.innerText = "COPY CODE"; }, 2000);
+            });
+        }
+
+        document.addEventListener('DOMContentLoaded', () => { 
+            lucide.createIcons(); 
+        });
+    </script>
+</body>
+</html>
+
                             </div>
                             <div>
                                 <h3 class="font-bold text-2xl mb-2">Eliminate the Noise</h3>
